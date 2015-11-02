@@ -8,18 +8,18 @@
 
 #import "BaseModel.h"
 
-@class HeroDetailBraumQModel,HeroDetailBraumRModel,HeroDetailBraumWModel,HeroDetailBraumBModel,HeroDetailBraumEModel,HeroDetailLikeModel,HeroDetailHateModel;
+@class HeroDetailBraumModel,HeroDetailLikeModel,HeroDetailHateModel;
 @interface HeroDetailModel : BaseModel
 
 @property (nonatomic, copy) NSString *ratingAttack;
 
-@property (nonatomic, strong) HeroDetailBraumWModel *Braum_W;
+@property (nonatomic, strong) HeroDetailBraumModel *Braum_W;
 
 @property (nonatomic, copy) NSString *ID;
 
 @property (nonatomic, copy) NSString *healthLevel;
 
-@property (nonatomic, strong) HeroDetailBraumQModel *Braum_Q;
+@property (nonatomic, strong) HeroDetailBraumModel *Braum_Q;
 
 @property (nonatomic, copy) NSString *quoteAuthor;
 
@@ -39,7 +39,7 @@
 
 @property (nonatomic, strong) NSArray<HeroDetailHateModel *> *hate;
 
-@property (nonatomic, strong) HeroDetailBraumEModel *Braum_E;
+@property (nonatomic, strong) HeroDetailBraumModel *Braum_E;
 
 @property (nonatomic, copy) NSString *healthRegenBase;
 
@@ -83,7 +83,7 @@
 
 @property (nonatomic, copy) NSString *ratingDefense;
 
-@property (nonatomic, strong) HeroDetailBraumBModel *Braum_B;
+@property (nonatomic, strong) HeroDetailBraumModel *Braum_B;
 
 @property (nonatomic, copy) NSString *tips;
 
@@ -93,7 +93,7 @@
 
 @property (nonatomic, copy) NSString *ratingMagic;
 
-@property (nonatomic, strong) HeroDetailBraumRModel *Braum_R;
+@property (nonatomic, strong) HeroDetailBraumModel *Braum_R;
 
 @property (nonatomic, copy) NSString *moveSpeed;
 
@@ -104,79 +104,7 @@
 @end
 
 
-@interface HeroDetailBraumQModel : NSObject
-
-@property (nonatomic, copy) NSString *effect;
-
-@property (nonatomic, copy) NSString *cost;
-
-@property (nonatomic, copy) NSString *ID;
-
-@property (nonatomic, copy) NSString *cooldown;
-
-@property (nonatomic, copy) NSString *range;
-
-@property (nonatomic, copy) NSString *desc;
-
-@property (nonatomic, copy) NSString *name;
-
-@end
-
-@interface HeroDetailBraumRModel : NSObject
-
-@property (nonatomic, copy) NSString *effect;
-
-@property (nonatomic, copy) NSString *cost;
-
-@property (nonatomic, copy) NSString *ID;
-
-@property (nonatomic, copy) NSString *cooldown;
-
-@property (nonatomic, copy) NSString *range;
-
-@property (nonatomic, copy) NSString *desc;
-
-@property (nonatomic, copy) NSString *name;
-
-@end
-
-@interface HeroDetailBraumWModel : NSObject
-
-@property (nonatomic, copy) NSString *effect;
-
-@property (nonatomic, copy) NSString *cost;
-
-@property (nonatomic, copy) NSString *ID;
-
-@property (nonatomic, copy) NSString *cooldown;
-
-@property (nonatomic, copy) NSString *range;
-
-@property (nonatomic, copy) NSString *desc;
-
-@property (nonatomic, copy) NSString *name;
-
-@end
-
-@interface HeroDetailBraumBModel : NSObject
-
-@property (nonatomic, copy) NSString *effect;
-
-@property (nonatomic, copy) NSString *cost;
-
-@property (nonatomic, copy) NSString *ID;
-
-@property (nonatomic, copy) NSString *cooldown;
-
-@property (nonatomic, copy) NSString *range;
-
-@property (nonatomic, copy) NSString *desc;
-
-@property (nonatomic, copy) NSString *name;
-
-@end
-
-@interface HeroDetailBraumEModel : NSObject
+@interface HeroDetailBraumModel : NSObject
 
 @property (nonatomic, copy) NSString *effect;
 
