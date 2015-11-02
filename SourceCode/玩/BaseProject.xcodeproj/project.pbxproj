@@ -38,6 +38,8 @@
 		38C7DB5D1BE759D500E3DE56 /* ZBCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C7DB5C1BE759D500E3DE56 /* ZBCategoryModel.m */; };
 		38C7DB601BE75A3700E3DE56 /* ZBItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C7DB5F1BE75A3700E3DE56 /* ZBItemModel.m */; };
 		38C7DB631BE75A7100E3DE56 /* ItemDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C7DB621BE75A7100E3DE56 /* ItemDetailModel.m */; };
+		38C7DB661BE75BD200E3DE56 /* GiftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C7DB651BE75BD200E3DE56 /* GiftModel.m */; };
+		38C7DB691BE75CE500E3DE56 /* RuneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C7DB681BE75CE500E3DE56 /* RuneModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +103,10 @@
 		38C7DB5F1BE75A3700E3DE56 /* ZBItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBItemModel.m; sourceTree = "<group>"; };
 		38C7DB611BE75A7100E3DE56 /* ItemDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailModel.h; sourceTree = "<group>"; };
 		38C7DB621BE75A7100E3DE56 /* ItemDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailModel.m; sourceTree = "<group>"; };
+		38C7DB641BE75BD200E3DE56 /* GiftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftModel.h; sourceTree = "<group>"; };
+		38C7DB651BE75BD200E3DE56 /* GiftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftModel.m; sourceTree = "<group>"; };
+		38C7DB671BE75CE500E3DE56 /* RuneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuneModel.h; sourceTree = "<group>"; };
+		38C7DB681BE75CE500E3DE56 /* RuneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuneModel.m; sourceTree = "<group>"; };
 		4329DABFE5AD654FE71597C9 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		5EAAD623A23724C816F8DC02 /* libPods-BaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -289,6 +295,10 @@
 				38C7DB5F1BE75A3700E3DE56 /* ZBItemModel.m */,
 				38C7DB611BE75A7100E3DE56 /* ItemDetailModel.h */,
 				38C7DB621BE75A7100E3DE56 /* ItemDetailModel.m */,
+				38C7DB641BE75BD200E3DE56 /* GiftModel.h */,
+				38C7DB651BE75BD200E3DE56 /* GiftModel.m */,
+				38C7DB671BE75CE500E3DE56 /* RuneModel.h */,
+				38C7DB681BE75CE500E3DE56 /* RuneModel.m */,
 			);
 			path = "多玩";
 			sourceTree = "<group>";
@@ -465,6 +475,7 @@
 				38C7DB541BE7555100E3DE56 /* HeroChangeModel.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
 				38C7DB601BE75A3700E3DE56 /* ZBItemModel.m in Sources */,
+				38C7DB691BE75CE500E3DE56 /* RuneModel.m in Sources */,
 				38C7DB481BE7489700E3DE56 /* HeroVideoModel.m in Sources */,
 				38C7DB5A1BE756FF00E3DE56 /* ToolMenuModel.m in Sources */,
 				38C7DB391BE740A900E3DE56 /* AlbumModel.m in Sources */,
@@ -473,6 +484,7 @@
 				38C7DB4B1BE7495800E3DE56 /* HeroCZModel.m in Sources */,
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
 				3886C0981BD748830014E661 /* main.m in Sources */,
+				38C7DB661BE75BD200E3DE56 /* GiftModel.m in Sources */,
 				3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */,
 				38C7DB331BE73E9D00E3DE56 /* TuWanModel.m in Sources */,
 				38C7DB3C1BE741E700E3DE56 /* FreeHeroModel.m in Sources */,
