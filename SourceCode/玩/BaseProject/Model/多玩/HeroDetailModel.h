@@ -116,7 +116,7 @@
 
 @property (nonatomic, copy) NSString *range;
 
-@property (nonatomic, copy) NSString *description;
+@property (nonatomic, copy) NSString *desc;
 
 @property (nonatomic, copy) NSString *name;
 
@@ -134,7 +134,7 @@
 
 @property (nonatomic, copy) NSString *range;
 
-@property (nonatomic, copy) NSString *description;
+@property (nonatomic, copy) NSString *desc;
 
 @property (nonatomic, copy) NSString *name;
 
@@ -152,7 +152,7 @@
 
 @property (nonatomic, copy) NSString *range;
 
-@property (nonatomic, copy) NSString *description;
+@property (nonatomic, copy) NSString *desc;
 
 @property (nonatomic, copy) NSString *name;
 
@@ -170,7 +170,7 @@
 
 @property (nonatomic, copy) NSString *range;
 
-@property (nonatomic, copy) NSString *description;
+@property (nonatomic, copy) NSString *desc;
 
 @property (nonatomic, copy) NSString *name;
 
@@ -188,7 +188,7 @@
 
 @property (nonatomic, copy) NSString *range;
 
-@property (nonatomic, copy) NSString *description;
+@property (nonatomic, copy) NSString *desc;
 
 @property (nonatomic, copy) NSString *name;
 

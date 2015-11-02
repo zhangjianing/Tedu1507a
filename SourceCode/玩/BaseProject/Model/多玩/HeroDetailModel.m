@@ -21,27 +21,35 @@
 
 @end
 @implementation HeroDetailBraumQModel
-
++ (NSDictionary *)replacedKeyFromPropertyName{
+    return @{@"ID": @"id", @"desc": @"description"};
+}
 @end
-
 
 @implementation HeroDetailBraumRModel
-
++ (NSDictionary *)replacedKeyFromPropertyName{
+    return @{@"ID": @"id", @"desc": @"description"};
+}
 @end
 
-
 @implementation HeroDetailBraumWModel
-
++ (NSDictionary *)replacedKeyFromPropertyName{
+    return @{@"ID": @"id", @"desc": @"description"};
+}
 @end
 
 
 @implementation HeroDetailBraumBModel
-
++ (NSDictionary *)replacedKeyFromPropertyName{
+    return @{@"ID": @"id", @"desc": @"description"};
+}
 @end
 
 
 @implementation HeroDetailBraumEModel
-
++ (NSDictionary *)replacedKeyFromPropertyName{
+    return @{@"ID": @"id", @"desc": @"description"};
+}
 @end
 
 
