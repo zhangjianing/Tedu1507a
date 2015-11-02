@@ -16,7 +16,7 @@
 }
 
 + (NSDictionary *)objectClassInArray{
-    return @{@"Purple" : [RunePurpleModel class], @"Yellow" : [RunePurpleModel class], @"Blue" : [RunePurpleModel class], @"Red" : [RunePurpleModel class]};
+    return @{@"purple" : [RunePurpleModel class], @"yellow" : [RunePurpleModel class], @"blue" : [RunePurpleModel class], @"red" : [RunePurpleModel class]};
 }
 @end
 @implementation RunePurpleModel
