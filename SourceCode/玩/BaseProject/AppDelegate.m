@@ -82,6 +82,10 @@
         DDLogVerbose(@"");
     }];
     
+    [DuoWanNetManager getHeroSkinsWithHeroName:@"Braum" completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
     return YES;
 }
 
