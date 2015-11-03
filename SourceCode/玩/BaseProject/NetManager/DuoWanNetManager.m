@@ -20,7 +20,6 @@
 @implementation DuoWanNetManager
 
 + (id)getHeroWithType:(HeroType)type completionHandle:(void (^)(id, NSError *))completionHandle{
-//参数错误传递提示
     
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{kOSType, @"v": @140}];
     switch (type) {
@@ -33,6 +32,7 @@
             break;
         }
         default: {
+            NSAssert1(NO, @"%s:type类型不正确", __func__);
             break;
         }
     }

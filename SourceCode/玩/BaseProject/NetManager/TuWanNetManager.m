@@ -95,6 +95,7 @@
             break;
         }
         default: {
+            NSAssert1(NO, @"%s:type类型不正确", __func__);
             break;
         }
     }
