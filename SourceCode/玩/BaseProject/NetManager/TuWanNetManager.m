@@ -7,13 +7,15 @@
 //
 
 #import "TuWanNetManager.h"
-//http://cache.tuwan.com/app/?appid=1&classmore=indexpic&appid=1&appver=2.1
+
 #define kTuWanPath  @"http://cache.tuwan.com/app/"
 #define kAppId      @"appid": @1
 #define kAppVer     @"appver": @2.1
 #define kClassMore  @"classmore": @"indexpic"
+
+//定义成宏，防止哪天服务器人员犯病，突然改动所有dtid键为tuwanID。 我们只需要改变宏中的字符串即可。
 #define kRemoveClassMore(dic)        [dic removeObjectForKey:@"classmore"];
-#define kSetDtId(string, dic)       [dic setObject:string forKey:@"dtid"];
+#define kSetDtId(string, dic)        [dic setObject:string forKey:@"dtid"];
 #define kSetClass(string, dic)       [dic setObject:string forKey:@"class"];
 #define kSetMod(string, dic)         [dic setObject:string forKey:@"mod"];
 
@@ -101,6 +103,7 @@
     
 //因为兔玩服务器的要求，传入参数不能为中文，需要转化为%号形式
     NSString *path = [self percentPathWithPath:kTuWanPath params:params];
+    
     return [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
         completionHandle([TuWanModel objectWithKeyValues:responseObj], error);
     }];

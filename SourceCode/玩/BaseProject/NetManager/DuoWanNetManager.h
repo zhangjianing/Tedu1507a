@@ -10,10 +10,6 @@
 
 @interface DuoWanNetManager : BaseNetManager
 
-
-
-
-
 @end
 
 

@@ -16,6 +16,7 @@ static AFHTTPSessionManager *manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         manager = [AFHTTPSessionManager manager];
+// 此处添加了 @"text/plain"   这样才能够解析 喜马拉雅 第二个请求
         manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript", @"text/plain", nil];
     });
     return manager;
