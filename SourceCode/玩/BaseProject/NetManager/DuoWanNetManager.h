@@ -56,7 +56,14 @@ typedef NS_ENUM(NSUInteger, HeroType) {
  */
 + (id)getHeroVideosWithPage:(NSInteger)page tag:(NSString *)enName kCompletionHandle;
 
-
+/**
+ *  获取某英雄出装
+ *
+ *  @param enName 英雄英文名
+ *
+ *  @return 网络请求任务
+ */
++ (id)getHeroCZWithHeroName:(NSString *)enName kCompletionHandle;
 
 @end
 

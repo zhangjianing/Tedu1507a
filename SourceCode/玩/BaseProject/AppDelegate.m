@@ -94,6 +94,10 @@
         DDLogVerbose(@"");
     }];
     
+    [DuoWanNetManager getHeroCZWithHeroName:@"Braum" completionHandle:^(NSArray *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
     return YES;
 }
 

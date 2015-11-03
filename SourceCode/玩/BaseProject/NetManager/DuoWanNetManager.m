@@ -78,6 +78,12 @@
     }];
 }
 
++ (id)getHeroCZWithHeroName:(NSString *)enName completionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kHeroCZPath parameters:@{kV, kOSType, @"limit": @7, @"championName": enName} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([HeroCZModel objectArrayWithKeyValuesArray:responseObj], error);
+    }];
+}
+
 @end
 
 
