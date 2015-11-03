@@ -9,6 +9,16 @@
 #import <UIKit/UIKit.h>
 
 
+/*
+ 各种小提示:
+ 1.做音频播放的同学，不要添加全局断点，会导致播放音频时项目崩溃，且此崩溃无处可查。
+ 2.兔玩服务器要求请求参数不能为中文，需要把中文转换为 % 号形势
+ 3.带有分页的接口一定要抓取2个以上，这样才能找到分页规律
+ 4.
+ 
+ */
+
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

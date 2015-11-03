@@ -34,7 +34,46 @@
     [TuWanNetManager getTuWanInfoWithType:InfoTypeTouTiao start:0 completionHandle:^(TuWanModel *model, NSError *error) {
         DDLogVerbose(@"");
     }];
+    
+    [TuWanNetManager getTuWanInfoWithType:InfoTypeCos start:0 completionHandle:^(TuWanModel *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    [TuWanNetManager getTuWanInfoWithType:InfoTypeLuShi start:0 completionHandle:^(TuWanModel *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    [TuWanNetManager getTuWanInfoWithType:InfoTypeDuJia start:0 completionHandle:^(TuWanModel *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    [TuWanNetManager getTuWanInfoWithType:InfoTypeMeiNv start:0 completionHandle:^(TuWanModel *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    [TuWanNetManager getTuWanInfoWithType:InfoTypeQuWen start:0 completionHandle:^(TuWanModel *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    [TuWanNetManager getTuWanInfoWithType:InfoTypeMoShou start:0 completionHandle:^(TuWanModel *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    [TuWanNetManager getTuWanInfoWithType:InfoTypeShiPin start:0 completionHandle:^(TuWanModel *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    [TuWanNetManager getTuWanInfoWithType:InfoTypeShouWang start:0 completionHandle:^(TuWanModel *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    [TuWanNetManager getTuWanInfoWithType:InfoTypeFengBao start:0 completionHandle:^(TuWanModel *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    [TuWanNetManager getTuWanInfoWithType:InfoTypeGongLue start:0 completionHandle:^(TuWanModel *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    [TuWanNetManager getTuWanInfoWithType:InfoTypeXingJi2 start:0 completionHandle:^(TuWanModel *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    [TuWanNetManager getTuWanInfoWithType:InfoTypeAnHei3 start:0 completionHandle:^(TuWanModel *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
 
+    /*多玩盒子 接口测试*/
+    
     return YES;
 }
 
