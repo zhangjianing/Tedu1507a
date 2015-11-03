@@ -47,8 +47,8 @@ static AFHTTPSessionManager *manager = nil;
 }
 
 + (id)GET:(NSString *)path parameters:(NSDictionary *)params completionHandler:(void(^)(id responseObj, NSError *error))complete{
-    path = [self percentPathWithPath:path params:params];
     //打印网络请求， DDLog  与  NSLog 功能一样
+    path =  [self percentPathWithPath:path params:params];
     DDLogVerbose(@"Request Path: %@", path);
     return [[self sharedAFManager] GET:path parameters:params success:^void(NSURLSessionDataTask * task, id responseObject) {
         complete(responseObject, nil);

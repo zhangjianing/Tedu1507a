@@ -16,4 +16,6 @@
 
 + (id)POST:(NSString *)path parameters:(NSDictionary *)params completionHandler:(void(^)(id responseObj, NSError *error))complete;
 
++ (NSString *)percentPathWithPath:(NSString *)path params:(NSDictionary *)params;
+
 @end

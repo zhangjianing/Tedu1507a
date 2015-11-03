@@ -21,11 +21,11 @@
     // Override point for customization after application launch.
     [self initializeWithApplication:application];
     
-//    NSString *path = @"http://cache.tuwan.com/app/?appid=1&class=heronews&mod=八卦&appid=1&appver=2.1";
-    NSString *path =@"http://cache.tuwan.com/app/";
-    NSDictionary *params = @{@"appid":@1, @"class": @"heronews", @"mod":@"八卦", @"appver":@2.1};
-    [BaseNetManager GET:path parameters:params completionHandler:^(id responseObj, NSError *error) {
-        TuWanModel *model = [TuWanModel objectWithKeyValues:responseObj];
+    NSString *path = @"http://mobile.ximalaya.com/mobile/discovery/v1/rankingList/album?device=iPhone&key=ranking:album:played:1:2&pageId=2&pageSize=20&position=0&title=排行榜";
+    NSDictionary *params = @{@"device":@"iPhone", @"key":@"ranking:album:played:1:2", @"pageId":@"2", @"pageId":@"2", @"pageSize": @20, @"position": @0, @"title": @"排行榜"};
+    
+    
+    [BaseNetManager GET:@"http://mobile.ximalaya.com/mobile/discovery/v1/rankingList/album" parameters:params completionHandler:^(id responseObj, NSError *error) {
         DDLogVerbose(@"...........");
     }];
     
