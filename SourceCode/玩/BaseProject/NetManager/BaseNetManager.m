@@ -16,7 +16,7 @@ static AFHTTPSessionManager *manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         manager = [AFHTTPSessionManager manager];
-        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript", nil];
+        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript", @"text/plain", nil];
     });
     return manager;
 }
@@ -48,8 +48,7 @@ static AFHTTPSessionManager *manager = nil;
 
 + (id)GET:(NSString *)path parameters:(NSDictionary *)params completionHandler:(void(^)(id responseObj, NSError *error))complete{
     //打印网络请求， DDLog  与  NSLog 功能一样
-    path =  [self percentPathWithPath:path params:params];
-    DDLogVerbose(@"Request Path: %@", path);
+    DDLogVerbose(@"Request Path: %@, params %@", path, params);
     return [[self sharedAFManager] GET:path parameters:params success:^void(NSURLSessionDataTask * task, id responseObject) {
         complete(responseObject, nil);
     } failure:^void(NSURLSessionDataTask * task, NSError * error) {

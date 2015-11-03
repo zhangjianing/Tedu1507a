@@ -8,8 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Category.h"
-#import "BaseNetManager.h"
-#import "TuWanModel.h"
+#import "XiMaNetManager.h"
 
 @interface AppDelegate ()
 
@@ -21,14 +20,14 @@
     // Override point for customization after application launch.
     [self initializeWithApplication:application];
     
-    NSString *path = @"http://mobile.ximalaya.com/mobile/discovery/v1/rankingList/album?device=iPhone&key=ranking:album:played:1:2&pageId=2&pageSize=20&position=0&title=排行榜";
-    NSDictionary *params = @{@"device":@"iPhone", @"key":@"ranking:album:played:1:2", @"pageId":@"2", @"pageId":@"2", @"pageSize": @20, @"position": @0, @"title": @"排行榜"};
-    
-    
-    [BaseNetManager GET:@"http://mobile.ximalaya.com/mobile/discovery/v1/rankingList/album" parameters:params completionHandler:^(id responseObj, NSError *error) {
-        DDLogVerbose(@"...........");
+/*喜马拉雅接口测试通过*/
+    [XiMaNetManager getRankListWithPageId:1 completionHandle:^(RankingListModel *model, NSError *error) {
+        DDLogVerbose(@"");
     }];
     
+    [XiMaNetManager getAlbumWithId:3092772 page:1 completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@""); //需要添加 text/plain 解析允许，在baseNetwork中
+    }];
 
     return YES;
 }
