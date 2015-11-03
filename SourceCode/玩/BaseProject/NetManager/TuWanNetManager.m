@@ -62,8 +62,6 @@
             break;
         }
         case InfoTypeTuPian: { //图片,视频,攻略 参数只差type，所以去掉case的break
-            kSetDtId(@"83623,31528,31537,31538,57067,91821", params)
-            kRemoveClassMore(params)
             [params setObject:@"pic" forKey:@"type"];
         }
         case InfoTypeShiPin: {
@@ -71,6 +69,8 @@
         }
         case InfoTypeGongLue: {
             [params setObject:@"guide" forKey:@"type"];
+            kSetDtId(@"83623,31528,31537,31538,57067,91821", params)
+            kRemoveClassMore(params)
             break;
         }
         case InfoTypeHuanHua: {
