@@ -46,6 +46,17 @@ typedef NS_ENUM(NSUInteger, HeroType) {
  */
 + (id)getHeroSoundWithHeroName:(NSString *)heroName kCompletionHandle;
 
+/**
+ *  获取某英雄相关视频
+ *
+ *  @param page   视频页数,最小为1. eg 1,2,3,4...
+ *  @param enName 英雄英文名
+ *
+ *  @return 网络请求任务
+ */
++ (id)getHeroVideosWithPage:(NSInteger)page tag:(NSString *)enName kCompletionHandle;
+
+
 
 @end
 

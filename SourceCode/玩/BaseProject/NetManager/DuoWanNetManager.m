@@ -67,8 +67,14 @@
 
 + (id)getHeroSoundWithHeroName:(NSString *)heroName completionHandle:(void (^)(id, NSError *))completionHandle{
     return [self GET:kHeroSoundPath parameters:@{kOSType, kV, kVersionName, @"hero": heroName} completionHandler:^(id responseObj, NSError *error) {
-//Json数据就是标准数组，不需要解析       
+//Json数据就是标准数组，不需要解析
         completionHandle(responseObj, error);
+    }];
+}
+
++ (id)getHeroVideosWithPage:(NSInteger)page tag:(NSString *)enName completionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kHeroVideoPath parameters:@{kVersionName, kOSType, @"action": @"l", @"p": @(page), @"src": @"letv", @"tag": enName} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([HeroVideoModel objectArrayWithKeyValuesArray:responseObj], error);
     }];
 }
 

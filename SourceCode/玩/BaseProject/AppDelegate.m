@@ -90,6 +90,10 @@
         DDLogVerbose(@"");
     }];
     
+    [DuoWanNetManager getHeroVideosWithPage:1 tag:@"Braum" completionHandle:^(NSArray *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
     return YES;
 }
 
