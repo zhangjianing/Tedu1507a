@@ -64,8 +64,10 @@
 		383F460C1BE848BE00B72DE2 /* TuWanNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanNetManager.m; sourceTree = "<group>"; };
 		383F460E1BE848D300B72DE2 /* XiMaNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaNetManager.h; sourceTree = "<group>"; };
 		383F460F1BE848D300B72DE2 /* XiMaNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaNetManager.m; sourceTree = "<group>"; };
+		386A0CD61BE88F460087E9A0 /* DuoWanModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuoWanModel.h; sourceTree = "<group>"; };
 		3879FE801BDFA8E100A99990 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		3879FE9D1BDFDD2400A99990 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		3885C8931BE8928E009441EA /* XiMaLaYaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XiMaLaYaModel.h; sourceTree = "<group>"; };
 		3886C0931BD748830014E661 /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3886C0971BD748830014E661 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3886C0991BD748830014E661 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -324,6 +326,7 @@
 				38C7DB6B1BE75ED900E3DE56 /* SumAbilityModel.m */,
 				38C7DB6D1BE75F6600E3DE56 /* BestGroupModel.h */,
 				38C7DB6E1BE75F6600E3DE56 /* BestGroupModel.m */,
+				386A0CD61BE88F460087E9A0 /* DuoWanModel.h */,
 			);
 			path = "多玩";
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				38C7DB351BE73FBB00E3DE56 /* RankingListModel.m */,
 				38C7DB371BE740A900E3DE56 /* AlbumModel.h */,
 				38C7DB381BE740A900E3DE56 /* AlbumModel.m */,
+				3885C8931BE8928E009441EA /* XiMaLaYaModel.h */,
 			);
 			path = "喜马拉雅";
 			sourceTree = "<group>";

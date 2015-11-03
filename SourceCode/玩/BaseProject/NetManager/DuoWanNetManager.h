@@ -7,6 +7,7 @@
 //
 
 #import "BaseNetManager.h"
+#import "DuoWanModel.h"
 
 @interface DuoWanNetManager : BaseNetManager
 

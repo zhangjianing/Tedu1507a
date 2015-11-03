@@ -7,8 +7,7 @@
 //
 
 #import "BaseNetManager.h"
-#import "RankingListModel.h"
-#import "AlbumModel.h"
+#import "XiMaLaYaModel.h"
 
 @interface XiMaNetManager : BaseNetManager
 //下方注释是 VVDocumenter 插件生成的。 安装此插件，在任何需要注释的位置 写///   三个/ 就可以自动弹出注释模板了
