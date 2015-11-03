@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "AppDelegate+Category.h"
 #import "XiMaNetManager.h"
+#import "TuWanNetManager.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +28,11 @@
     
     [XiMaNetManager getAlbumWithId:3092772 page:1 completionHandle:^(id model, NSError *error) {
         DDLogVerbose(@""); //需要添加 text/plain 解析允许，在baseNetwork中
+    }];
+    
+/*兔玩接口测试通过*/
+    [TuWanNetManager getTuWanInfoWithType:InfoTypeTouTiao start:0 completionHandle:^(TuWanModel *model, NSError *error) {
+        DDLogVerbose(@"");
     }];
 
     return YES;
