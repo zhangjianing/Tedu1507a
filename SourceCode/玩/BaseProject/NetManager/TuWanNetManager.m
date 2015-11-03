@@ -80,6 +80,7 @@
         case InfoTypeQuWen: {
             kSetMod(@"趣闻", params)
             kSetClass(@"heronews", params)
+            kSetDtId(@"0", params);
             break;
         }
         case InfoTypeCos: {
