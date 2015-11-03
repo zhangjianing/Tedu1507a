@@ -65,6 +65,13 @@
     }];
 }
 
++ (id)getHeroSoundWithHeroName:(NSString *)heroName completionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kHeroSoundPath parameters:@{kOSType, kV, kVersionName, @"hero": heroName} completionHandler:^(id responseObj, NSError *error) {
+//Json数据就是标准数组，不需要解析       
+        completionHandle(responseObj, error);
+    }];
+}
+
 @end
 
 

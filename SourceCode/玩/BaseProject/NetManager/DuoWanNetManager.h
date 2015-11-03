@@ -37,6 +37,15 @@ typedef NS_ENUM(NSUInteger, HeroType) {
  */
 + (id)getHeroSkinsWithHeroName:(NSString *)heroName kCompletionHandle;
 
+/**
+ *  获取英雄配音
+ *
+ *  @param heroName 英雄英文名
+ *
+ *  @return 网络请求任务
+ */
++ (id)getHeroSoundWithHeroName:(NSString *)heroName kCompletionHandle;
+
 
 @end
 

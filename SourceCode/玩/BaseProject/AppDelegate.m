@@ -82,7 +82,11 @@
         DDLogVerbose(@"");
     }];
     
-    [DuoWanNetManager getHeroSkinsWithHeroName:@"Braum" completionHandle:^(id model, NSError *error) {
+    [DuoWanNetManager getHeroSkinsWithHeroName:@"Braum" completionHandle:^(NSArray *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getHeroSoundWithHeroName:@"Braum" completionHandle:^(NSArray *model, NSError *error) {
         DDLogVerbose(@"");
     }];
     
