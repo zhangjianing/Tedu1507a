@@ -61,14 +61,12 @@
             kSetDtId(@"57067", params)
             break;
         }
-        case InfoTypeTuPian: { //图片,视频,攻略 参数只差type，所以去掉case的break
-            [params setObject:@"pic" forKey:@"type"];
-        }
-        case InfoTypeShiPin: {
-            [params setObject:@"video" forKey:@"type"];
-        }
+        case InfoTypeTuPian://图片,视频,攻略 参数只差type，所以去掉case的break
+        case InfoTypeShiPin:
         case InfoTypeGongLue: {
-            [params setObject:@"guide" forKey:@"type"];
+            if (type == InfoTypeTuPian) [params setObject:@"pic" forKey:@"type"];
+            if (type == InfoTypeShiPin) [params setObject:@"video" forKey:@"type"];
+            if (type == InfoTypeGongLue) [params setObject:@"guide" forKey:@"type"];
             kSetDtId(@"83623,31528,31537,31538,57067,91821", params)
             kRemoveClassMore(params)
             break;

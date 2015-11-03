@@ -23,7 +23,7 @@
 @implementation DuoWanNetManager
 
 + (id)getHeroWithType:(HeroType)type completionHandle:(void (^)(id, NSError *))completionHandle{
-    
+//参数错误传递提示
     
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{kOSType, @"v": @140}];
     switch (type) {
@@ -51,6 +51,7 @@
                 break;
             }
             default: {
+                completionHandle(nil, error);
                 break;
             }
         }
