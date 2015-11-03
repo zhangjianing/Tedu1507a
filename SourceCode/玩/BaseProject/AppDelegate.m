@@ -10,6 +10,7 @@
 #import "AppDelegate+Category.h"
 #import "XiMaNetManager.h"
 #import "TuWanNetManager.h"
+#import "DuoWanNetManager.h"
 
 @interface AppDelegate ()
 
@@ -73,6 +74,13 @@
     }];
 
     /*多玩盒子 接口测试*/
+    [DuoWanNetManager getHeroWithType:HeroTypeAll completionHandle:^(AllHeroModel *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getHeroWithType:HeroTypeFree completionHandle:^(FreeHeroModel *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
     
     return YES;
 }
