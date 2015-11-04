@@ -115,6 +115,15 @@ typedef NS_ENUM(NSUInteger, HeroType) {
  *  @return
  */
 + (id)getZBItemListWithTag:(NSString *)tag kCompletionHandle;
+
+/**
+ *  装备详情
+ *
+ *  @param itemId 装备id
+ *
+ *  @return 
+ */
++ (id)getItemDetailWithItemId:(NSInteger)itemId kCompletionHandle;
 @end
 
 
