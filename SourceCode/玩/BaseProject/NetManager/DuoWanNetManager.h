@@ -130,6 +130,12 @@ typedef NS_ENUM(NSUInteger, HeroType) {
 
 /** 获取符文列表 */
 + (id)getRunesCompletionHandle:(void(^)(id model, NSError *error))completionHandle;
+
+/** 获取召唤师技能 */
++ (id)getSumAbilityCompletionHandle:(void(^)(id model, NSError *error))completionHandle;
+
+/** 获取最佳阵容 */
++ (id)getHeroBestGroupCompletionHandle:(void(^)(id model, NSError *error))completionHandle;
 @end
 
 

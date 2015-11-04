@@ -137,6 +137,10 @@
     [DuoWanNetManager getRunesCompletionHandle:^(id model, NSError *error) {
         DDLogVerbose(@"");
     }];
+    
+    [DuoWanNetManager getHeroBestGroupCompletionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
     return YES;
 }
 

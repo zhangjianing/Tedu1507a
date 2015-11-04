@@ -143,6 +143,18 @@
         completionHandle([RuneModel objectWithKeyValues:responseObj], error);
     }];
 }
+
++ (id)getSumAbilityCompletionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kSumAbilityPath parameters:@{kV, kOSType} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([SumAbilityModel objectWithKeyValues:responseObj], error);
+    }];
+}
+
++ (id)getHeroBestGroupCompletionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kBestGroupPath parameters:@{kV, kOSType} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([BestGroupModel objectArrayWithKeyValuesArray:responseObj], error);
+    }];
+}
 @end
 
 
