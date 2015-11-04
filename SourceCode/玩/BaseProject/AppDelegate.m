@@ -98,6 +98,17 @@
         DDLogVerbose(@"");
     }];
     
+    [DuoWanNetManager getHeroDetailWithHeroName:@"Braum" completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getHeroGiftAndRun:@"Braum" completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getHeroInfoWithHeroName:@"Braum" completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
     return YES;
 }
 

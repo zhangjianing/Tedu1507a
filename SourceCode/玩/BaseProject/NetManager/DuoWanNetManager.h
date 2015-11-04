@@ -65,6 +65,33 @@ typedef NS_ENUM(NSUInteger, HeroType) {
  */
 + (id)getHeroCZWithHeroName:(NSString *)enName kCompletionHandle;
 
+/**
+ *  获取英雄资料
+ *
+ *  @param enName 英雄英文名
+ *
+ *  @return 网络请求任务
+ */
++ (id)getHeroDetailWithHeroName:(NSString *)enName kCompletionHandle;
+
+/**
+ *  获取英雄天赋和符文
+ *
+ *  @param enName 英雄英文名
+ *
+ *  @return 网络请求任务
+ */
++ (id)getHeroGiftAndRun:(NSString *)enName kCompletionHandle;
+
+/**
+ *  获取英雄改动
+ *
+ *  @param enName 英雄英文名
+ *
+ *  @return 网络请求任务
+ */
++ (id)getHeroInfoWithHeroName:(NSString *)enName kCompletionHandle;
+
 @end
 
 

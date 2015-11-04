@@ -84,6 +84,24 @@
     }];
 }
 
++ (id)getHeroDetailWithHeroName:(NSString *)enName completionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kHeroDetailPath parameters:@{kV, kOSType, @"heroName": enName} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([HeroDetailModel objectWithKeyValues:responseObj], error);
+    }];
+}
+
++ (id)getHeroGiftAndRun:(NSString *)enName completionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kGiftAndRunPath parameters:@{kV, kOSType, @"hero": enName} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([HeroGiftModel objectArrayWithKeyValuesArray:responseObj], error);
+    }];
+}
+
++ (id)getHeroInfoWithHeroName:(NSString *)enName completionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kHeroInfoPath parameters:@{kV, kOSType, @"name": enName} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([HeroChangeModel objectWithKeyValues:responseObj], error);
+    }];
+}
+
 @end
 
 
