@@ -127,6 +127,9 @@ typedef NS_ENUM(NSUInteger, HeroType) {
 
 /** 获取天赋树 */
 + (id)getGIftCompletionHandle:(void(^)(id model, NSError *error))completionHandle;
+
+/** 获取符文列表 */
++ (id)getRunesCompletionHandle:(void(^)(id model, NSError *error))completionHandle;
 @end
 
 

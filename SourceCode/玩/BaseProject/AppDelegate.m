@@ -133,6 +133,10 @@
     [DuoWanNetManager getGIftCompletionHandle:^(id model, NSError *error) {
         DDLogVerbose(@"");
     }];
+    
+    [DuoWanNetManager getRunesCompletionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
     return YES;
 }
 

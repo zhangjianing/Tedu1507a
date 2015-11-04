@@ -137,6 +137,12 @@
         completionHandle([GiftModel objectWithKeyValues:responseObj], error);
     }];
 }
+
++ (id)getRunesCompletionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kRunesPath parameters:@{kV, kOSType} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([RuneModel objectWithKeyValues:responseObj], error);
+    }];
+}
 @end
 
 
