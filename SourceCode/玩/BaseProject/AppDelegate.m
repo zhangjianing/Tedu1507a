@@ -117,6 +117,10 @@
     [DuoWanNetManager getToolMenuCompletionHandle:^(id model, NSError *error) {
         DDLogVerbose(@"");
     }];
+    
+    [DuoWanNetManager getZBCategoryCompletionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
     return YES;
 }
 

@@ -114,6 +114,12 @@
     }];
 }
 
++ (id)getZBCategoryCompletionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kZBCategoryPath parameters:@{} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([ZBCategoryModel objectArrayWithKeyValuesArray:responseObj], error);
+    }];
+}
+
 @end
 
 
