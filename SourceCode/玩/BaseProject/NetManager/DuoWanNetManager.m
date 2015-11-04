@@ -16,6 +16,10 @@
 #define kVersionName    @"versionName": @"2.4.0"
 #define kV              @"v": @140
 
+#define kChangeKey(key)    [dic setObject:[dic objectForKey:[enName stringByAppendingString:key]]\
+forKey:[@"desc" stringByAppendingString:key]];\
+[dic removeObjectForKey:[enName stringByAppendingString:key]]
+
 //把path写到文件头部，使用宏定义形势。 方便后期维护
 //把所有路径宏定义封装到DuoWanRequestPath.h文件中,太多东西放在文件头部,好乱的说😊
 #import "DuoWanRequestPath.h"
@@ -85,8 +89,14 @@
 }
 
 + (id)getHeroDetailWithHeroName:(NSString *)enName completionHandle:(void (^)(id, NSError *))completionHandle{
-    return [self GET:kHeroDetailPath parameters:@{kV, kOSType, @"heroName": enName} completionHandler:^(id responseObj, NSError *error) {
-        completionHandle([HeroDetailModel objectWithKeyValues:responseObj], error);
+    return [self GET:kHeroDetailPath parameters:@{kV, kOSType, @"heroName": enName} completionHandler:^(NSDictionary * responseObj, NSError *error) {
+        NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:responseObj];
+        kChangeKey(@"_Q");
+        kChangeKey(@"_R");
+        kChangeKey(@"_W");
+        kChangeKey(@"_B");
+        kChangeKey(@"_E");
+        completionHandle([HeroDetailModel objectWithKeyValues:dic], error);
     }];
 }
 
