@@ -124,6 +124,9 @@ typedef NS_ENUM(NSUInteger, HeroType) {
  *  @return 
  */
 + (id)getItemDetailWithItemId:(NSInteger)itemId kCompletionHandle;
+
+/** 获取天赋树 */
++ (id)getGIftCompletionHandle:(void(^)(id model, NSError *error))completionHandle;
 @end
 
 

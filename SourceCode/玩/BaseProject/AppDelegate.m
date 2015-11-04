@@ -121,6 +121,18 @@
     [DuoWanNetManager getZBCategoryCompletionHandle:^(id model, NSError *error) {
         DDLogVerbose(@"");
     }];
+    
+    [DuoWanNetManager getZBItemListWithTag:@"consumable" completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getItemDetailWithItemId:3004 completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getGIftCompletionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
     return YES;
 }
 

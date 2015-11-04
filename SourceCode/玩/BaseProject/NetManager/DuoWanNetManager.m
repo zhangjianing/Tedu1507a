@@ -131,6 +131,12 @@
         completionHandle([ItemDetailModel objectWithKeyValues:responseObj], error);
     }];
 }
+
++ (id)getGIftCompletionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kGiftPath parameters:@{kV, kOSType} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([GiftModel objectWithKeyValues:responseObj], error);
+    }];
+}
 @end
 
 
