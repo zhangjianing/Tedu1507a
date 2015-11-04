@@ -120,6 +120,12 @@
     }];
 }
 
++ (id)getZBItemListWithTag:(NSString *)tag completionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kZBItemListPath parameters:@{} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([ZBItemModel objectArrayWithKeyValuesArray:responseObj], error);
+    }];
+}
+
 @end
 
 
