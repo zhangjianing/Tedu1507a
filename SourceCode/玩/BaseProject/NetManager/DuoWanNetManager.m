@@ -108,6 +108,12 @@
     }];
 }
 
++ (id)getToolMenuCompletionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kToolMenuPath parameters:@{kV, kVersionName, kOSType, @"category": @"database"} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([ToolMenuModel objectArrayWithKeyValuesArray:responseObj], error);
+    }];
+}
+
 @end
 
 

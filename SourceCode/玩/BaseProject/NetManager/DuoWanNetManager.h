@@ -101,6 +101,8 @@ typedef NS_ENUM(NSUInteger, HeroType) {
  */
 + (id)getWeekDataWithHeroId:(NSInteger)heroId kCompletionHandle;
 
+/** 获取游戏百科列表 */
++ (id)getToolMenuCompletionHandle:(void(^)(id model, NSError *error))completionHandle;
 @end
 
 
