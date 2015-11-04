@@ -82,10 +82,65 @@
         DDLogVerbose(@"");
     }];
     
-    [DuoWanNetManager getHeroSkinsWithHeroName:@"Braum" completionHandle:^(id model, NSError *error) {
+    [DuoWanNetManager getHeroSkinsWithHeroName:@"Braum" completionHandle:^(NSArray *model, NSError *error) {
         DDLogVerbose(@"");
     }];
     
+    [DuoWanNetManager getHeroSoundWithHeroName:@"Braum" completionHandle:^(NSArray *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getHeroVideosWithPage:1 tag:@"Braum" completionHandle:^(NSArray *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getHeroCZWithHeroName:@"Braum" completionHandle:^(NSArray *model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getHeroDetailWithHeroName:@"Braum" completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getHeroGiftAndRun:@"Braum" completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getHeroInfoWithHeroName:@"Braum" completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getWeekDataWithHeroId:72 completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getToolMenuCompletionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getZBCategoryCompletionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getZBItemListWithTag:@"consumable" completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getItemDetailWithItemId:3004 completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getGIftCompletionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getRunesCompletionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
+    
+    [DuoWanNetManager getHeroBestGroupCompletionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
     return YES;
 }
 
