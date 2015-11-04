@@ -109,6 +109,10 @@
     [DuoWanNetManager getHeroInfoWithHeroName:@"Braum" completionHandle:^(id model, NSError *error) {
         DDLogVerbose(@"");
     }];
+    
+    [DuoWanNetManager getWeekDataWithHeroId:72 completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
     return YES;
 }
 

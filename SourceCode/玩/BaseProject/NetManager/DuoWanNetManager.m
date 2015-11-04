@@ -102,6 +102,12 @@
     }];
 }
 
++ (id)getWeekDataWithHeroId:(NSInteger)heroId completionHandle:(void (^)(id, NSError *))completionHandle{
+    return [self GET:kHeroWeekDataPath parameters:@{@"heroId": @(heroId)} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([HeroWeekDataModel objectWithKeyValues:responseObj], error);
+    }];
+}
+
 @end
 
 

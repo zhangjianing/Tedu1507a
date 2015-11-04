@@ -92,6 +92,15 @@ typedef NS_ENUM(NSUInteger, HeroType) {
  */
 + (id)getHeroInfoWithHeroName:(NSString *)enName kCompletionHandle;
 
+/**
+ *  获取英雄一周数据
+ *
+ *  @param heroId 英雄id
+ *
+ *  @return 网络请求任务
+ */
++ (id)getWeekDataWithHeroId:(NSInteger)heroId kCompletionHandle;
+
 @end
 
 
