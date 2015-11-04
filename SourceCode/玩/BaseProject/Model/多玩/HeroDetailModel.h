@@ -13,13 +13,13 @@
 
 @property (nonatomic, copy) NSString *ratingAttack;
 
-@property (nonatomic, strong) HeroDetailBraumModel *Braum_W;
+@property (nonatomic, strong) HeroDetailBraumModel *desc_W;
 
 @property (nonatomic, copy) NSString *ID;
 
 @property (nonatomic, copy) NSString *healthLevel;
 
-@property (nonatomic, strong) HeroDetailBraumModel *Braum_Q;
+@property (nonatomic, strong) HeroDetailBraumModel *desc_Q;
 
 @property (nonatomic, copy) NSString *quoteAuthor;
 
@@ -39,7 +39,7 @@
 
 @property (nonatomic, strong) NSArray<HeroDetailHateModel *> *hate;
 
-@property (nonatomic, strong) HeroDetailBraumModel *Braum_E;
+@property (nonatomic, strong) HeroDetailBraumModel *desc_E;
 
 @property (nonatomic, copy) NSString *healthRegenBase;
 
@@ -83,7 +83,7 @@
 
 @property (nonatomic, copy) NSString *ratingDefense;
 
-@property (nonatomic, strong) HeroDetailBraumModel *Braum_B;
+@property (nonatomic, strong) HeroDetailBraumModel *desc_B;
 
 @property (nonatomic, copy) NSString *tips;
 
@@ -93,7 +93,7 @@
 
 @property (nonatomic, copy) NSString *ratingMagic;
 
-@property (nonatomic, strong) HeroDetailBraumModel *Braum_R;
+@property (nonatomic, strong) HeroDetailBraumModel *desc_R;
 
 @property (nonatomic, copy) NSString *moveSpeed;
 
