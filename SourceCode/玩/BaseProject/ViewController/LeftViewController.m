@@ -10,12 +10,8 @@
 #import <NSString+Icons.h>
 
 @interface LeftViewController ()
-
 @end
-
 @implementation LeftViewController
-
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
