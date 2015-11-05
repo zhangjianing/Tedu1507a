@@ -12,7 +12,11 @@
 		3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4C1BD758F10046C8C8 /* NSObject+Common.m */; };
 		3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4E1BD758F10046C8C8 /* NSString+PJR.m */; };
 		3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE501BD758F10046C8C8 /* NSString+QRCode.m */; };
-		3835CFB71BD90E150024CA48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3835CFB61BD90E150024CA48 /* ViewController.m */; };
+		382A8FE91BEB066300A1874C /* DuoWanTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A8FE81BEB066300A1874C /* DuoWanTabBarController.m */; };
+		382A8FEC1BEB06C700A1874C /* TuWanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A8FEB1BEB06C700A1874C /* TuWanViewController.m */; };
+		382A8FEF1BEB06EB00A1874C /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A8FEE1BEB06EB00A1874C /* MyInfoViewController.m */; };
+		382A8FF21BEB071500A1874C /* RankListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A8FF11BEB071500A1874C /* RankListViewController.m */; };
+		382A8FF51BEB076200A1874C /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A8FF41BEB076200A1874C /* LeftViewController.m */; };
 		3879FE811BDFA8E100A99990 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3879FE801BDFA8E100A99990 /* libsqlite3.0.tbd */; };
 		3885C8981BE8E88D009441EA /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3885C8971BE8E88D009441EA /* iCarousel.m */; };
 		3885C89D1BE8E8E8009441EA /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3885C89A1BE8E8E8009441EA /* libMobClickLibrary.a */; };
@@ -76,8 +80,16 @@
 		3804CE4E1BD758F10046C8C8 /* NSString+PJR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PJR.m"; sourceTree = "<group>"; };
 		3804CE4F1BD758F10046C8C8 /* NSString+QRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+QRCode.h"; sourceTree = "<group>"; };
 		3804CE501BD758F10046C8C8 /* NSString+QRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QRCode.m"; sourceTree = "<group>"; };
-		3835CFB51BD90E150024CA48 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3835CFB61BD90E150024CA48 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		382A8FE71BEB066300A1874C /* DuoWanTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanTabBarController.h; sourceTree = "<group>"; };
+		382A8FE81BEB066300A1874C /* DuoWanTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoWanTabBarController.m; sourceTree = "<group>"; };
+		382A8FEA1BEB06C700A1874C /* TuWanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanViewController.h; sourceTree = "<group>"; };
+		382A8FEB1BEB06C700A1874C /* TuWanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanViewController.m; sourceTree = "<group>"; };
+		382A8FED1BEB06EB00A1874C /* MyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInfoViewController.h; sourceTree = "<group>"; };
+		382A8FEE1BEB06EB00A1874C /* MyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfoViewController.m; sourceTree = "<group>"; };
+		382A8FF01BEB071500A1874C /* RankListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankListViewController.h; sourceTree = "<group>"; };
+		382A8FF11BEB071500A1874C /* RankListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankListViewController.m; sourceTree = "<group>"; };
+		382A8FF31BEB076200A1874C /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		382A8FF41BEB076200A1874C /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		3879FE801BDFA8E100A99990 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		3879FE9D1BDFDD2400A99990 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		3885C8961BE8E88D009441EA /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
@@ -205,6 +217,70 @@
 				3804CE501BD758F10046C8C8 /* NSString+QRCode.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		382A8FDB1BEB054F00A1874C /* 多玩盒子 */ = {
+			isa = PBXGroup;
+			children = (
+				382A8FE71BEB066300A1874C /* DuoWanTabBarController.h */,
+				382A8FE81BEB066300A1874C /* DuoWanTabBarController.m */,
+			);
+			path = "多玩盒子";
+			sourceTree = "<group>";
+		};
+		382A8FDC1BEB054F00A1874C /* 兔玩游戏 */ = {
+			isa = PBXGroup;
+			children = (
+				382A8FEA1BEB06C700A1874C /* TuWanViewController.h */,
+				382A8FEB1BEB06C700A1874C /* TuWanViewController.m */,
+			);
+			path = "兔玩游戏";
+			sourceTree = "<group>";
+		};
+		382A8FDD1BEB054F00A1874C /* 我的信息 */ = {
+			isa = PBXGroup;
+			children = (
+				382A8FED1BEB06EB00A1874C /* MyInfoViewController.h */,
+				382A8FEE1BEB06EB00A1874C /* MyInfoViewController.m */,
+			);
+			path = "我的信息";
+			sourceTree = "<group>";
+		};
+		382A8FDE1BEB054F00A1874C /* 喜马拉雅 */ = {
+			isa = PBXGroup;
+			children = (
+				382A8FF01BEB071500A1874C /* RankListViewController.h */,
+				382A8FF11BEB071500A1874C /* RankListViewController.m */,
+			);
+			path = "喜马拉雅";
+			sourceTree = "<group>";
+		};
+		382A8FE31BEB05AD00A1874C /* 多玩盒子 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "多玩盒子";
+			sourceTree = "<group>";
+		};
+		382A8FE41BEB05AD00A1874C /* 兔玩游戏 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "兔玩游戏";
+			sourceTree = "<group>";
+		};
+		382A8FE51BEB05AD00A1874C /* 我的信息 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的信息";
+			sourceTree = "<group>";
+		};
+		382A8FE61BEB05AD00A1874C /* 喜马拉雅 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "喜马拉雅";
 			sourceTree = "<group>";
 		};
 		3885C8951BE8E88D009441EA /* iCarousel */ = {
@@ -458,8 +534,12 @@
 		3886C0B61BD74A4A0014E661 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3835CFB51BD90E150024CA48 /* ViewController.h */,
-				3835CFB61BD90E150024CA48 /* ViewController.m */,
+				382A8FDB1BEB054F00A1874C /* 多玩盒子 */,
+				382A8FDC1BEB054F00A1874C /* 兔玩游戏 */,
+				382A8FDD1BEB054F00A1874C /* 我的信息 */,
+				382A8FDE1BEB054F00A1874C /* 喜马拉雅 */,
+				382A8FF31BEB076200A1874C /* LeftViewController.h */,
+				382A8FF41BEB076200A1874C /* LeftViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -467,6 +547,10 @@
 		3886C0B71BD74A4A0014E661 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				382A8FE31BEB05AD00A1874C /* 多玩盒子 */,
+				382A8FE41BEB05AD00A1874C /* 兔玩游戏 */,
+				382A8FE51BEB05AD00A1874C /* 我的信息 */,
+				382A8FE61BEB05AD00A1874C /* 喜马拉雅 */,
 				3886C0B91BD74AE90014E661 /* BaseViewModel.h */,
 				3886C0BA1BD74AE90014E661 /* BaseViewModel.m */,
 			);
@@ -648,16 +732,20 @@
 			files = (
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
+				382A8FEF1BEB06EB00A1874C /* MyInfoViewController.m in Sources */,
 				3885C8FA1BE8E96A009441EA /* PSCollectionViewCell.m in Sources */,
+				382A8FF21BEB071500A1874C /* RankListViewController.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
 				3885C8F91BE8E96A009441EA /* PSCollectionView.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
 				3885C8981BE8E88D009441EA /* iCarousel.m in Sources */,
-				3835CFB71BD90E150024CA48 /* ViewController.m in Sources */,
+				382A8FF51BEB076200A1874C /* LeftViewController.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
+				382A8FE91BEB066300A1874C /* DuoWanTabBarController.m in Sources */,
 				3885C8FB1BE8E96A009441EA /* README.md in Sources */,
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
+				382A8FEC1BEB06C700A1874C /* TuWanViewController.m in Sources */,
 				3886C0981BD748830014E661 /* main.m in Sources */,
 				3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */,
 			);

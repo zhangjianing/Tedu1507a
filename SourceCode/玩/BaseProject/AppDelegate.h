@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 /*
  各种小提示:
  1.做音频播放的同学，不要添加全局断点，会导致播放音频时项目崩溃，且此崩溃无处可查。
@@ -24,5 +23,7 @@
 @property (strong, nonatomic) UIWindow *window;
 
 @property(nonatomic,getter=isOnLine) BOOL onLine; //网络状态
+
+
 @end
 

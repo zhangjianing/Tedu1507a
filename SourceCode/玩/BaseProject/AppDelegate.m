@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Category.h"
+#import "LeftViewController.h"
+#import "TuWanViewController.h"
 
 @interface AppDelegate ()
 @end
@@ -17,8 +19,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self initializeWithApplication:application];
+    
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [_window makeKeyAndVisible];
+    RESideMenu *sideMenu=[[RESideMenu alloc]initWithContentViewController:[TuWanViewController standardTuWanNavi] leftMenuViewController:[LeftViewController new] rightMenuViewController:nil];
+    _window.rootViewController = sideMenu;
+    
     return YES;
 }
+//生成放有兔玩游戏界面的导航控制器
+
 
 @end
 
