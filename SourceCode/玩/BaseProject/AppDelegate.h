@@ -16,11 +16,12 @@
  5.插件HHEnumeration，可以自动提示枚举类型的变量
  
  */
-
+#import <RESideMenu.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic,strong) RESideMenu *sideMenu;
 
 @property(nonatomic,getter=isOnLine) BOOL onLine; //网络状态
 
