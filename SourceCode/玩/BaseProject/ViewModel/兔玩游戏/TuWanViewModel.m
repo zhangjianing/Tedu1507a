@@ -92,6 +92,15 @@
     return self.indexPicArr.count;
 }
 
+/** 获取列表中某行数据对应的html5链接 */
+- (NSURL *)detailURLForRowInList:(NSInteger)row{
+    return [NSURL URLWithString:[self modelForArr:self.dataArr row:row].html5];
+}
+/** 获取展示栏中某行数据对应的html5链接 */
+- (NSURL *)detailURLForRowInIndexPic:(NSInteger)row{
+    return [NSURL URLWithString:[self modelForArr:self.indexPicArr row:row].html5];
+}
+
 @end
 
 
