@@ -22,7 +22,7 @@
     
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [_window makeKeyAndVisible];
-    RESideMenu *sideMenu=[[RESideMenu alloc]initWithContentViewController:[TuWanViewController standardTuWanNavi] leftMenuViewController:[LeftViewController new] rightMenuViewController:nil];
+    RESideMenu *sideMenu=[[RESideMenu alloc]initWithContentViewController:nil leftMenuViewController:[LeftViewController new] rightMenuViewController:nil];
     _window.rootViewController = sideMenu;
     
     return YES;
