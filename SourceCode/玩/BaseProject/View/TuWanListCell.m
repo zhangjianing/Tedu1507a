@@ -13,7 +13,7 @@
     if(_iconIV == nil) {
         _iconIV = [[UIImageView alloc] init];
 //内容模式：保持比例，填充满
-        _iconIV.contentMode = UIViewContentModeScaleAspectFill;
+//        _iconIV.contentMode = UIViewContentModeScaleAspectFill;
     }
     return _iconIV;
 }
@@ -31,6 +31,7 @@
         _longTitleLb = [[UILabel alloc] init];
         _longTitleLb.font=[UIFont systemFontOfSize:14];
         _longTitleLb.textColor=[UIColor lightGrayColor];
+        _longTitleLb.numberOfLines = 0;
     }
     return _longTitleLb;
 }
