@@ -72,6 +72,7 @@
 		3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BA1BD74AE90014E661 /* BaseViewModel.m */; };
 		3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */; };
 		3886C0C11BD74B090014E661 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0C01BD74B090014E661 /* BaseModel.m */; };
+		38BEAC1F1BEC8E2200D567D7 /* TRImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BEAC1E1BEC8E2200D567D7 /* TRImageView.m */; };
 		38CBDD781BEB442A008D5ADC /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CBDD771BEB442A008D5ADC /* Factory.m */; };
 		38CBDD7B1BEB4719008D5ADC /* TuWanViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CBDD7A1BEB4719008D5ADC /* TuWanViewModel.m */; };
 		38CBDD831BEB474C008D5ADC /* DuoWanNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CBDD7D1BEB474C008D5ADC /* DuoWanNetManager.m */; };
@@ -206,6 +207,8 @@
 		3886C0BF1BD74B090014E661 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		3886C0C01BD74B090014E661 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		3886C0C21BD74B430014E661 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		38BEAC1D1BEC8E2200D567D7 /* TRImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRImageView.h; sourceTree = "<group>"; };
+		38BEAC1E1BEC8E2200D567D7 /* TRImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRImageView.m; sourceTree = "<group>"; };
 		38CBDD761BEB442A008D5ADC /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
 		38CBDD771BEB442A008D5ADC /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
 		38CBDD791BEB4719008D5ADC /* TuWanViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanViewModel.h; sourceTree = "<group>"; };
@@ -630,6 +633,8 @@
 		3886C0B51BD74A4A0014E661 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				38BEAC1D1BEC8E2200D567D7 /* TRImageView.h */,
+				38BEAC1E1BEC8E2200D567D7 /* TRImageView.m */,
 				382020101BEC36F20003DB02 /* TuWanListCell.h */,
 				382020111BEC36F20003DB02 /* TuWanListCell.m */,
 				382020131BEC415C0003DB02 /* TuWanImageCell.h */,
@@ -935,6 +940,7 @@
 				38CBDDC41BEB4755008D5ADC /* TuWanModel.m in Sources */,
 				38CBDDB81BEB4755008D5ADC /* HeroCZModel.m in Sources */,
 				38CBDDB31BEB4755008D5ADC /* AllHeroModel.m in Sources */,
+				38BEAC1F1BEC8E2200D567D7 /* TRImageView.m in Sources */,
 				382A8FE91BEB066300A1874C /* DuoWanTabBarController.m in Sources */,
 				3885C8FB1BE8E96A009441EA /* README.md in Sources */,
 				38CBDDC11BEB4755008D5ADC /* ToolMenuModel.m in Sources */,
