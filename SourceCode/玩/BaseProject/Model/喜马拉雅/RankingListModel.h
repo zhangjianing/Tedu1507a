@@ -26,7 +26,7 @@
 @property (nonatomic, assign) NSInteger ret;
 
 @end
-@interface RankListListModel : NSObject
+@interface RankListListModel : BaseModel
 
 @property (nonatomic, assign) NSInteger ID;
 

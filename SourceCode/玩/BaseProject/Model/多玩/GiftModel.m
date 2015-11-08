@@ -17,10 +17,6 @@
 @end
 @implementation GiftAModel
 
-+ (NSDictionary *)replacedKeyFromPropertyName{
-    return @{@"ID": @"id"};
-}
-
 @end
 
 

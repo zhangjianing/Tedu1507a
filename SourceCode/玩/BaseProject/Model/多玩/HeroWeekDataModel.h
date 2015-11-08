@@ -18,7 +18,7 @@
 @property (nonatomic, assign) NSInteger code;
 
 @end
-@interface HeroWeekDataDataModel : NSObject
+@interface HeroWeekDataDataModel : BaseModel
 
 @property (nonatomic, strong) NSArray<HeroWeekDataDataChartsModel *> *charts;
 
@@ -31,7 +31,7 @@
 
 @end
 
-@interface HeroWeekDataDataChartsModel : NSObject
+@interface HeroWeekDataDataChartsModel : BaseModel
 
 @property (nonatomic, copy) NSString *color;
 
@@ -43,7 +43,7 @@
 
 @end
 
-@interface HeroWeekDataDataChartsRatioDataModel : NSObject
+@interface HeroWeekDataDataChartsRatioDataModel : BaseModel
 
 @property (nonatomic, copy) NSString *name;
 
