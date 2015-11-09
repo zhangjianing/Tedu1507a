@@ -82,9 +82,30 @@
         }];
         
         [self.titleLb mas_makeConstraints:^(MASConstraintMaker *make) {
-            
+            make.topMargin.mas_equalTo(self.iconIV.mas_topMargin).mas_equalTo(3);
+            make.left.mas_equalTo(self.iconIV.mas_right).mas_equalTo(10);
+            make.right.mas_equalTo(-10);
         }];
         
+        [self.descLb mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(0);
+            make.left.mas_equalTo(self.iconIV.mas_right).mas_equalTo(10);
+            make.right.mas_equalTo(-10);
+        }];
+        
+        [self.numberIV mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(self.iconIV.mas_right).mas_equalTo(10);
+            make.size.mas_equalTo(CGSizeMake(10, 10));
+        }];
+        
+        [self.numberLb mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(self.numberIV.mas_right).mas_equalTo(2);
+            make.right.mas_equalTo(-10);
+            make.bottomMargin.mas_equalTo(self.iconIV.mas_bottomMargin).mas_equalTo(-3);
+            make.centerY.mas_equalTo(self.numberIV);
+        }];
+//分割线左间距调整
+        self.separatorInset = UIEdgeInsetsMake(0, 50, 0, 0);
         
     }
     return self;

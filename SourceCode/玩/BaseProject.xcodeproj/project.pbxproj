@@ -16,6 +16,7 @@
 		382020121BEC36F20003DB02 /* TuWanListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 382020111BEC36F20003DB02 /* TuWanListCell.m */; };
 		382020151BEC415C0003DB02 /* TuWanImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 382020141BEC415C0003DB02 /* TuWanImageCell.m */; };
 		382391651BF0496200F2F52F /* XiMaCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 382391641BF0496200F2F52F /* XiMaCategoryCell.m */; };
+		382391681BF0726B00F2F52F /* XiMaCategoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 382391671BF0726B00F2F52F /* XiMaCategoryViewModel.m */; };
 		382A8FE91BEB066300A1874C /* DuoWanTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A8FE81BEB066300A1874C /* DuoWanTabBarController.m */; };
 		382A8FEC1BEB06C700A1874C /* TuWanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A8FEB1BEB06C700A1874C /* TuWanViewController.m */; };
 		382A8FEF1BEB06EB00A1874C /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A8FEE1BEB06EB00A1874C /* MyInfoViewController.m */; };
@@ -123,6 +124,8 @@
 		382020141BEC415C0003DB02 /* TuWanImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanImageCell.m; sourceTree = "<group>"; };
 		382391631BF0496200F2F52F /* XiMaCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaCategoryCell.h; sourceTree = "<group>"; };
 		382391641BF0496200F2F52F /* XiMaCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaCategoryCell.m; sourceTree = "<group>"; };
+		382391661BF0726B00F2F52F /* XiMaCategoryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaCategoryViewModel.h; sourceTree = "<group>"; };
+		382391671BF0726B00F2F52F /* XiMaCategoryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaCategoryViewModel.m; sourceTree = "<group>"; };
 		382A8FE71BEB066300A1874C /* DuoWanTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanTabBarController.h; sourceTree = "<group>"; };
 		382A8FE81BEB066300A1874C /* DuoWanTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoWanTabBarController.m; sourceTree = "<group>"; };
 		382A8FEA1BEB06C700A1874C /* TuWanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanViewController.h; sourceTree = "<group>"; };
@@ -397,6 +400,8 @@
 		382A8FE61BEB05AD00A1874C /* 喜马拉雅 */ = {
 			isa = PBXGroup;
 			children = (
+				382391661BF0726B00F2F52F /* XiMaCategoryViewModel.h */,
+				382391671BF0726B00F2F52F /* XiMaCategoryViewModel.m */,
 			);
 			path = "喜马拉雅";
 			sourceTree = "<group>";
@@ -936,6 +941,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
+				382391681BF0726B00F2F52F /* XiMaCategoryViewModel.m in Sources */,
 				38CBDDBA1BEB4755008D5ADC /* HeroGiftModel.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
 				38CBDDB41BEB4755008D5ADC /* BestGroupModel.m in Sources */,

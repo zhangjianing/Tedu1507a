@@ -10,6 +10,7 @@
 #import "AppDelegate+Category.h"
 #import "LeftViewController.h"
 #import "TuWanViewController.h"
+#import "RankListViewController.h"
 
 @interface AppDelegate ()
 @end
@@ -20,6 +21,8 @@
     // Override point for customization after application launch.
     [self initializeWithApplication:application];
     self.window.rootViewController = self.sideMenu;
+/** 测试代码 */
+    self.window.rootViewController = [RankListViewController defaultNavi];
     [self configGlobalUIStyle]; //配置全局UI样式
     return YES;
 }
