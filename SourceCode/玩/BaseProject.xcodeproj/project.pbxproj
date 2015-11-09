@@ -22,6 +22,8 @@
 		382A8FF51BEB076200A1874C /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A8FF41BEB076200A1874C /* LeftViewController.m */; };
 		384417171BEF5EE8004D486F /* TuWanVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 384417161BEF5EE8004D486F /* TuWanVideoModel.m */; };
 		3844171A1BEF6076004D486F /* TuWanPicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 384417191BEF6076004D486F /* TuWanPicModel.m */; };
+		384417201BF0299C004D486F /* TuWanPicViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3844171F1BF0299C004D486F /* TuWanPicViewModel.m */; };
+		384417231BF02EA1004D486F /* TuWanPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384417221BF02EA1004D486F /* TuWanPicViewController.m */; };
 		3879FE811BDFA8E100A99990 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3879FE801BDFA8E100A99990 /* libsqlite3.0.tbd */; };
 		3885C8981BE8E88D009441EA /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3885C8971BE8E88D009441EA /* iCarousel.m */; };
 		3885C89D1BE8E8E8009441EA /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3885C89A1BE8E8E8009441EA /* libMobClickLibrary.a */; };
@@ -132,6 +134,10 @@
 		384417161BEF5EE8004D486F /* TuWanVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanVideoModel.m; sourceTree = "<group>"; };
 		384417181BEF6076004D486F /* TuWanPicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanPicModel.h; sourceTree = "<group>"; };
 		384417191BEF6076004D486F /* TuWanPicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanPicModel.m; sourceTree = "<group>"; };
+		3844171E1BF0299C004D486F /* TuWanPicViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanPicViewModel.h; sourceTree = "<group>"; };
+		3844171F1BF0299C004D486F /* TuWanPicViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanPicViewModel.m; sourceTree = "<group>"; };
+		384417211BF02EA1004D486F /* TuWanPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanPicViewController.h; sourceTree = "<group>"; };
+		384417221BF02EA1004D486F /* TuWanPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanPicViewController.m; sourceTree = "<group>"; };
 		3879FE801BDFA8E100A99990 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		3879FE9D1BDFDD2400A99990 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		3885C8961BE8E88D009441EA /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
@@ -336,6 +342,8 @@
 				3820200E1BEC36710003DB02 /* TuWanListViewController.m */,
 				38BEAC201BEC95B800D567D7 /* TuWanHtmlViewController.h */,
 				38BEAC211BEC95B800D567D7 /* TuWanHtmlViewController.m */,
+				384417211BF02EA1004D486F /* TuWanPicViewController.h */,
+				384417221BF02EA1004D486F /* TuWanPicViewController.m */,
 			);
 			path = "兔玩游戏";
 			sourceTree = "<group>";
@@ -370,6 +378,8 @@
 			children = (
 				38CBDD791BEB4719008D5ADC /* TuWanViewModel.h */,
 				38CBDD7A1BEB4719008D5ADC /* TuWanViewModel.m */,
+				3844171E1BF0299C004D486F /* TuWanPicViewModel.h */,
+				3844171F1BF0299C004D486F /* TuWanPicViewModel.m */,
 			);
 			path = "兔玩游戏";
 			sourceTree = "<group>";
@@ -940,10 +950,12 @@
 				38CBDDBF1BEB4755008D5ADC /* RuneModel.m in Sources */,
 				38CBDDB71BEB4755008D5ADC /* HeroChangeModel.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
+				384417201BF0299C004D486F /* TuWanPicViewModel.m in Sources */,
 				3885C8981BE8E88D009441EA /* iCarousel.m in Sources */,
 				38CBDDC21BEB4755008D5ADC /* ZBCategoryModel.m in Sources */,
 				384417171BEF5EE8004D486F /* TuWanVideoModel.m in Sources */,
 				382020121BEC36F20003DB02 /* TuWanListCell.m in Sources */,
+				384417231BF02EA1004D486F /* TuWanPicViewController.m in Sources */,
 				38CBDD831BEB474C008D5ADC /* DuoWanNetManager.m in Sources */,
 				38CBDD781BEB442A008D5ADC /* Factory.m in Sources */,
 				38CBDDBD1BEB4755008D5ADC /* HeroWeekDataModel.m in Sources */,

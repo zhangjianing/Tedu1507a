@@ -12,6 +12,7 @@
 #import "TuWanImageCell.h"
 #import "iCarousel.h"
 #import "TuWanHtmlViewController.h"
+#import "TuWanPicViewController.h"
 
 @interface TuWanListViewController ()<iCarouselDelegate,iCarouselDataSource>
 @property(nonatomic,strong)TuWanViewModel *tuwanVM;
@@ -189,12 +190,22 @@ kRemoveCellSeparator
         TuWanHtmlViewController *vc=[[TuWanHtmlViewController alloc] initWithURL:[self.tuwanVM detailURLForRowInList:indexPath.row]];
         [self.navigationController pushViewController:vc animated:YES];
     }
+    
+    if ([self.tuwanVM isPicInListForRow:indexPath.row]) {
+        TuWanPicViewController *vc =[[TuWanPicViewController alloc] initWithAid:[self.tuwanVM aidInListForRow:indexPath.row]];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
 }
 
 /** 滚动栏中被选中后触发 */
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
     if ([self.tuwanVM isHtmlInIndexPicForRow:index]) {
         TuWanHtmlViewController *vc=[[TuWanHtmlViewController alloc] initWithURL:[self.tuwanVM detailURLForRowInIndexPic:index]];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if ([self.tuwanVM isPicInIndexPicForRow:index]) {
+        TuWanPicViewController *vc=[[TuWanPicViewController alloc] initWithAid:[self.tuwanVM aidInIndexPicForRow:index]];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
