@@ -27,6 +27,8 @@
 
 /** 当前最大页数 */
 @property(nonatomic) NSInteger maxPageId;
+/** 是否有更多页面 */
+@property(nonatomic, getter=isHasMore) BOOL hasMore;
 @end
 
 

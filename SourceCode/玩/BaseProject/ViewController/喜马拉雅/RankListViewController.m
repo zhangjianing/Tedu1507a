@@ -44,9 +44,9 @@
                     [self showErrorMsg:error];
                 }else{
                     [self.tableView reloadData];
+                    //   重置脚步 没有更多数据
+                    [_tableView.footer resetNoMoreData];
                 }
-                //   重置脚步 没有更多数据
-                [_tableView.footer resetNoMoreData];
                 [_tableView.header endRefreshing];
             }];
         }];
@@ -54,14 +54,13 @@
             [self.ximaVM getMoreDataCompletionHandle:^(NSError *error) {
                 if (error) {
                     [self showErrorMsg:error.localizedDescription];
-                    if (error.code == 999) {
-                        [self.tableView.footer endRefreshingWithNoMoreData];
-                    }else{
-                        [_tableView.footer endRefreshing];
-                    }
                 }else{
                     [self.tableView reloadData];
-                    [_tableView.footer endRefreshing];
+                    if ([self.ximaVM isHasMore]) {
+                        [_tableView.footer endRefreshing];
+                    }else{
+                        [_tableView.footer endRefreshingWithNoMoreData];
+                    }
                 }
             }];
         }];

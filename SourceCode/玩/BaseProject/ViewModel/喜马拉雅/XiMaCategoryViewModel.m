@@ -15,13 +15,13 @@
 }
 - (void)getMoreDataCompletionHandle:(CompletionHandle)completionHandle{
 //如果当前页数已经是最大页数，那么没有必要再发送获取更多请求了，这样会浪费用户流量
-    if (_maxPageId <= _pageId) {
+    if (self.isHasMore) {
+        _pageId += 1;
+        [self getDataFromNetCompleteHandle:completionHandle];
+    }else{
         NSError *err=[NSError errorWithDomain:@"" code:999 userInfo:@{NSLocalizedDescriptionKey:@"没有更多数据了"}];
         completionHandle(err);
-        return;
     }
-    _pageId += 1;
-    [self getDataFromNetCompleteHandle:completionHandle];
 }
 - (void)getDataFromNetCompleteHandle:(CompletionHandle)completionHandle{
     self.dataTask=[XiMaNetManager getRankListWithPageId:_pageId completionHandle:^(RankingListModel* model, NSError *error) {
@@ -57,7 +57,9 @@
     return [NSString stringWithFormat:@"%ld集", [self modelForRow:row].tracks];
 }
 
-
+- (BOOL)isHasMore{
+    return _maxPageId > _pageId;
+}
 @end
 
 
