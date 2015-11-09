@@ -82,10 +82,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     XiMaCategoryCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     cell.titleLb.text = [self.ximaVM titleForRow:indexPath.row];
-    cell.descLb.text = [self.ximaVM descForRow:indexPath.row];
-    cell.numberLb.text = [self.ximaVM numberForRow:indexPath.row];
+
     [cell.iconIV.imageView setImageWithURL:[self.ximaVM iconURLForRow:indexPath.row] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_1"]];
     cell.orderLb.text = @(indexPath.row + 1).stringValue;
+    cell.descLb.text = [self.ximaVM descForRow:indexPath.row];
+    cell.numberLb.text = [self.ximaVM numberForRow:indexPath.row];
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

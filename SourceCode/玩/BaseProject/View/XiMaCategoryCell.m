@@ -15,6 +15,11 @@
         _orderLb.font=[UIFont boldSystemFontOfSize:17];
         _orderLb.textColor=[UIColor lightGrayColor];
         [self.contentView addSubview:_orderLb];
+        [self.orderLb mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(0);
+            make.left.mas_equalTo(10);
+            make.width.mas_equalTo(20);
+        }];
     }
     return _orderLb;
 }
@@ -23,6 +28,11 @@
     if(_iconIV == nil) {
         _iconIV = [[TRImageView alloc] init];
         [self.contentView addSubview:_iconIV];
+        [self.iconIV mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(65, 65));
+            make.centerY.mas_equalTo(0);
+            make.left.mas_equalTo(self.orderLb.mas_right).mas_equalTo(0);
+        }];
     }
     return _iconIV;
 }
@@ -32,6 +42,11 @@
         _titleLb = [[UILabel alloc] init];
         _titleLb.font=[UIFont boldSystemFontOfSize:18];
         [self.contentView addSubview:_titleLb];
+        [self.titleLb mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.topMargin.mas_equalTo(self.iconIV.mas_topMargin).mas_equalTo(3);
+            make.left.mas_equalTo(self.iconIV.mas_right).mas_equalTo(10);
+            make.right.mas_equalTo(-10);
+        }];
     }
     return _titleLb;
 }
@@ -42,6 +57,11 @@
         _descLb.font=[UIFont systemFontOfSize:15];
         _descLb.textColor =[UIColor lightGrayColor];
         [self.contentView addSubview:_descLb];
+        [self.descLb mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(0);
+            make.left.mas_equalTo(self.iconIV.mas_right).mas_equalTo(10);
+            make.right.mas_equalTo(-10);
+        }];
     }
     return _descLb;
 }
@@ -52,6 +72,10 @@
         _numberLb.font =[UIFont systemFontOfSize:12];
         _numberLb.textColor = [UIColor lightGrayColor];
         [self.contentView addSubview:_numberLb];
+        [self.numberIV mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(self.iconIV.mas_right).mas_equalTo(10);
+            make.size.mas_equalTo(CGSizeMake(10, 10));
+        }];
     }
     return _numberLb;
 }
@@ -61,6 +85,12 @@
         _numberIV = [[TRImageView alloc] init];
         _numberIV.imageView.image=[UIImage imageNamed:@"album_tracks"];
         [self.contentView addSubview:_numberIV];
+        [self.numberLb mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(self.numberIV.mas_right).mas_equalTo(2);
+            make.right.mas_equalTo(-10);
+            make.bottomMargin.mas_equalTo(self.iconIV.mas_bottomMargin).mas_equalTo(-3);
+            make.centerY.mas_equalTo(self.numberIV);
+        }];
     }
     return _numberIV;
 }
@@ -69,48 +99,12 @@
 //右箭头样式
         self.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
 //添加依赖autolayout 一定要有顺序，即从左到右，从上向下。
-        [self.orderLb mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.mas_equalTo(0);
-            make.left.mas_equalTo(10);
-            make.width.mas_equalTo(20);
-        }];
-        
-        [self.iconIV mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(65, 65));
-            make.centerY.mas_equalTo(0);
-            make.left.mas_equalTo(self.orderLb.mas_right).mas_equalTo(0);
-        }];
-        
-        [self.titleLb mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.topMargin.mas_equalTo(self.iconIV.mas_topMargin).mas_equalTo(3);
-            make.left.mas_equalTo(self.iconIV.mas_right).mas_equalTo(10);
-            make.right.mas_equalTo(-10);
-        }];
-        
-        [self.descLb mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.mas_equalTo(0);
-            make.left.mas_equalTo(self.iconIV.mas_right).mas_equalTo(10);
-            make.right.mas_equalTo(-10);
-        }];
-        
-        [self.numberIV mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(self.iconIV.mas_right).mas_equalTo(10);
-            make.size.mas_equalTo(CGSizeMake(10, 10));
-        }];
-        
-        [self.numberLb mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(self.numberIV.mas_right).mas_equalTo(2);
-            make.right.mas_equalTo(-10);
-            make.bottomMargin.mas_equalTo(self.iconIV.mas_bottomMargin).mas_equalTo(-3);
-            make.centerY.mas_equalTo(self.numberIV);
-        }];
 //分割线左间距调整
         self.separatorInset = UIEdgeInsetsMake(0, 50, 0, 0);
         
     }
     return self;
 }
-
 
 - (void)awakeFromNib {
     // Initialization code
