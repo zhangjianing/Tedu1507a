@@ -36,7 +36,7 @@
 @end
 
 
-@interface ItemDetailExtattrsModel : NSObject
+@interface ItemDetailExtattrsModel : BaseModel
 
 @property (nonatomic, assign) NSInteger flatMPPoolMod;
 

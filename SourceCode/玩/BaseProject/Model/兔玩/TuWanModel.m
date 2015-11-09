@@ -27,10 +27,6 @@
     return @{@"showitem" : [TuWanDataIndexpicShowitemModel class]};
 }
 
-+ (NSDictionary *)replacedKeyFromPropertyName{
-    return @{@"typeName": @"typename", @"desc": @"description"};
-}
-
 @end
 
 

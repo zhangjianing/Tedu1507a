@@ -22,7 +22,7 @@
 @end
 
 
-@interface HeroChangeChangelogModel : NSObject
+@interface HeroChangeChangelogModel : BaseModel
 
 @property (nonatomic, copy) NSString *version;
 

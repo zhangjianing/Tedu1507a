@@ -16,7 +16,7 @@
 @property (nonatomic, copy) NSString *desc;
 
 @end
-@interface FreeHeroFreeModel : NSObject
+@interface FreeHeroFreeModel : BaseModel
 
 @property (nonatomic, copy) NSString *enName;
 

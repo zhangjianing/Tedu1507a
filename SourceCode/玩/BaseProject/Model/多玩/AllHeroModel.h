@@ -14,7 +14,7 @@
 @property (nonatomic, strong) NSArray<AllHeroAllModel *> *all;
 
 @end
-@interface AllHeroAllModel : NSObject
+@interface AllHeroAllModel : BaseModel
 
 @property (nonatomic, copy) NSString *enName;
 

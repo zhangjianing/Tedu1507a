@@ -20,7 +20,7 @@
 @property (nonatomic, assign) NSInteger ret;
 
 @end
-@interface AlbumAlbumModel : NSObject
+@interface AlbumAlbumModel : BaseModel
 
 @property (nonatomic, assign) NSInteger status;
 
@@ -76,7 +76,7 @@
 
 @end
 
-@interface AlbumTracksModel : NSObject
+@interface AlbumTracksModel : BaseModel
 
 @property (nonatomic, assign) NSInteger maxPageId;
 
@@ -90,7 +90,7 @@
 
 @end
 
-@interface AlbumTracksListModel : NSObject
+@interface AlbumTracksListModel : BaseModel
 
 @property (nonatomic, assign) NSInteger status;
 

@@ -104,7 +104,7 @@
 @end
 
 
-@interface HeroDetailBraumModel : NSObject
+@interface HeroDetailBraumModel : BaseModel
 
 @property (nonatomic, copy) NSString *effect;
 
@@ -122,7 +122,7 @@
 
 @end
 
-@interface HeroDetailLikeModel : NSObject
+@interface HeroDetailLikeModel : BaseModel
 
 @property (nonatomic, copy) NSString *partner;
 
@@ -130,7 +130,7 @@
 
 @end
 
-@interface HeroDetailHateModel : NSObject
+@interface HeroDetailHateModel : BaseModel
 
 @property (nonatomic, copy) NSString *partner;
 

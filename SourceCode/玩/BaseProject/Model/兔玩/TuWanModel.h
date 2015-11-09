@@ -18,7 +18,7 @@
 @property (nonatomic, copy) NSString *code;
 
 @end
-@interface TuWanDataModel : NSObject
+@interface TuWanDataModel : BaseModel
 
 @property (nonatomic, strong) NSArray<TuWanDataIndexpicModel *> *indexpic;
 
@@ -26,7 +26,7 @@
 
 @end
 
-@interface TuWanDataIndexpicModel : NSObject
+@interface TuWanDataIndexpicModel : BaseModel
 
 @property (nonatomic, copy) NSString *color;
 
@@ -82,7 +82,7 @@
 
 @end
 
-@interface TuWanDataIndexpicInfochildModel : NSObject
+@interface TuWanDataIndexpicInfochildModel : BaseModel
 
 @property (nonatomic, copy) NSString *later;
 
@@ -98,7 +98,7 @@
 
 @end
 
-@interface TuWanDataIndexpicShowitemModel : NSObject
+@interface TuWanDataIndexpicShowitemModel : BaseModel
 
 @property (nonatomic, copy) NSString *pic;
 
@@ -108,7 +108,7 @@
 
 @end
 
-@interface TuWanDataIndexpicShowitemInfoModel : NSObject
+@interface TuWanDataIndexpicShowitemInfoModel : BaseModel
 
 @property (nonatomic, copy) NSString *width;
 

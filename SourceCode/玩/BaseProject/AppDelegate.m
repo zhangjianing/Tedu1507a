@@ -8,12 +8,10 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Category.h"
-#import "XiMaNetManager.h"
-#import "TuWanNetManager.h"
-#import "DuoWanNetManager.h"
+#import "LeftViewController.h"
+#import "TuWanViewController.h"
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
@@ -21,134 +19,41 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self initializeWithApplication:application];
-/*喜马拉雅接口测试通过*/
-/*    [XiMaNetManager getRankListWithPageId:1 completionHandle:^(RankingListModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [XiMaNetManager getAlbumWithId:3092772 page:1 completionHandle:^(id model, NSError *error) {
-        DDLogVerbose(@""); //需要添加 text/plain 解析允许，在baseNetwork中
-    }];
-*/
-    
-/*兔玩接口测试通过*/
-/*    [TuWanNetManager getTuWanInfoWithType:InfoTypeTouTiao start:0 completionHandle:^(TuWanModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [TuWanNetManager getTuWanInfoWithType:InfoTypeCos start:0 completionHandle:^(TuWanModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    [TuWanNetManager getTuWanInfoWithType:InfoTypeLuShi start:0 completionHandle:^(TuWanModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    [TuWanNetManager getTuWanInfoWithType:InfoTypeDuJia start:0 completionHandle:^(TuWanModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    [TuWanNetManager getTuWanInfoWithType:InfoTypeMeiNv start:0 completionHandle:^(TuWanModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    [TuWanNetManager getTuWanInfoWithType:InfoTypeQuWen start:0 completionHandle:^(TuWanModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    [TuWanNetManager getTuWanInfoWithType:InfoTypeMoShou start:0 completionHandle:^(TuWanModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    [TuWanNetManager getTuWanInfoWithType:InfoTypeShiPin start:0 completionHandle:^(TuWanModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    [TuWanNetManager getTuWanInfoWithType:InfoTypeShouWang start:0 completionHandle:^(TuWanModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    [TuWanNetManager getTuWanInfoWithType:InfoTypeFengBao start:0 completionHandle:^(TuWanModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    [TuWanNetManager getTuWanInfoWithType:InfoTypeGongLue start:0 completionHandle:^(TuWanModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    [TuWanNetManager getTuWanInfoWithType:InfoTypeXingJi2 start:0 completionHandle:^(TuWanModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    [TuWanNetManager getTuWanInfoWithType:InfoTypeAnHei3 start:0 completionHandle:^(TuWanModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-*/
-    /*多玩盒子 接口测试*/
-    /*
-    [DuoWanNetManager getHeroWithType:HeroTypeAll completionHandle:^(AllHeroModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getHeroWithType:HeroTypeFree completionHandle:^(FreeHeroModel *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getHeroSkinsWithHeroName:@"Braum" completionHandle:^(NSArray *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getHeroSoundWithHeroName:@"Braum" completionHandle:^(NSArray *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getHeroVideosWithPage:1 tag:@"Braum" completionHandle:^(NSArray *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getHeroCZWithHeroName:@"Braum" completionHandle:^(NSArray *model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getHeroDetailWithHeroName:@"Varus" completionHandle:^(id model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getHeroGiftAndRun:@"Braum" completionHandle:^(id model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getHeroInfoWithHeroName:@"Braum" completionHandle:^(id model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getWeekDataWithHeroId:72 completionHandle:^(id model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getToolMenuCompletionHandle:^(id model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getZBCategoryCompletionHandle:^(id model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getZBItemListWithTag:@"consumable" completionHandle:^(id model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getItemDetailWithItemId:3004 completionHandle:^(id model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getGIftCompletionHandle:^(id model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getRunesCompletionHandle:^(id model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
-    
-    [DuoWanNetManager getHeroBestGroupCompletionHandle:^(id model, NSError *error) {
-        DDLogVerbose(@"");
-    }]; */
-    
-    
-    [DuoWanNetManager getHeroDetailWithHeroName:@"Varus" completionHandle:^(id model, NSError *error) {
-        DDLogVerbose(@"");
-    }];
+    self.window.rootViewController = self.sideMenu;
+    [self configGlobalUIStyle]; //配置全局UI样式
     return YES;
 }
+/** 配置全局UI的样式 */
+- (void)configGlobalUIStyle{
+/** 导航栏不透明 */
+    [[UINavigationBar appearance] setTranslucent:NO];
+/** 设置导航栏背景图 */
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationbar_bg_64"] forBarMetrics:UIBarMetricsDefault];
+/** 配置导航栏题目的样式 */
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont flatFontOfSize:kNaviTitleFontSize], NSForegroundColorAttributeName: kNaviTitleColor}];
+}
+
+
+/** 代码重构:用代码把功能实现以后，考虑代码结构如何编写可以更加方便后期维护 */
+- (UIWindow *)window{
+    if (!_window) {
+        _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        [_window makeKeyAndVisible];
+    }
+    return _window;
+}
+
+- (RESideMenu *)sideMenu{
+    if (!_sideMenu) {
+        _sideMenu=[[RESideMenu alloc]initWithContentViewController:[TuWanViewController standardTuWanNavi] leftMenuViewController:[LeftViewController new] rightMenuViewController:nil];
+        //为sideMenu设置背景图,图片插件KSImageName，到Github下载
+        _sideMenu.backgroundImage =[UIImage imageNamed:@"10979715_0800"];
+        //可以让出现菜单时不显示状态栏
+        _sideMenu.menuPrefersStatusBarHidden = YES;
+    }
+    return _sideMenu;
+}
+
 
 @end
 

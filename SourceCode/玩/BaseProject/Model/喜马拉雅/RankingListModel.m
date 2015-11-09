@@ -17,10 +17,6 @@
 @end
 @implementation RankListListModel
 
-+ (NSDictionary *)replacedKeyFromPropertyName{
-    return @{@"ID": @"id"};
-}
-
 @end
 
 

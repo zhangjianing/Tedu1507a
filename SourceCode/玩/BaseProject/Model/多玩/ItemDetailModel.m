@@ -10,10 +10,6 @@
 
 @implementation ItemDetailModel
 
-+ (NSDictionary *)replacedKeyFromPropertyName{
-    return @{@"desc": @"description", @"ID": @"id"};
-}
-
 @end
 
 @implementation ItemDetailExtattrsModel

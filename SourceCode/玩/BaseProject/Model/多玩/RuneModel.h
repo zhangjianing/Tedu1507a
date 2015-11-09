@@ -20,7 +20,7 @@
 @property (nonatomic, strong) NSArray<RunePurpleModel *> *red;
 
 @end
-@interface RunePurpleModel : NSObject
+@interface RunePurpleModel : BaseModel
 
 @property (nonatomic, copy) NSString *img;
 
