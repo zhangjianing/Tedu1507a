@@ -59,17 +59,24 @@
             }else{
                 [self.tableView reloadData];
             }
+//   重置脚步 没有更多数据
+            [_tableView.footer resetNoMoreData];
             [_tableView.header endRefreshing];
         }];
     }];
     self.tableView.footer=[MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         [self.ximaVM getMoreDataCompletionHandle:^(NSError *error) {
             if (error) {
-                [self showErrorMsg:error];
+                [self showErrorMsg:error.localizedDescription];
+                if (error.code == 999) {
+                    [self.tableView.footer endRefreshingWithNoMoreData];
+                }else{
+                    [_tableView.footer endRefreshing];
+                }
             }else{
                 [self.tableView reloadData];
+                [_tableView.footer endRefreshing];
             }
-            [_tableView.footer endRefreshing];
         }];
     }];
     [self.tableView.header beginRefreshing];

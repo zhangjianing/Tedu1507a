@@ -12,13 +12,28 @@
 - (UILabel *)orderLb {
     if(_orderLb == nil) {
         _orderLb = [[UILabel alloc] init];
-        _orderLb.font=[UIFont boldSystemFontOfSize:17];
+        _orderLb.font=[UIFont boldSystemFontOfSize:18];
         _orderLb.textColor=[UIColor lightGrayColor];
+        _orderLb.textAlignment = NSTextAlignmentCenter;
         [self.contentView addSubview:_orderLb];
+//使用KVO-键值观察，如果text被赋值为1，颜色是...
+//下方方法：如果_orderLb的text属性 被赋 新值，则触发task
+        [_orderLb bk_addObserverForKeyPath:@"text" options:NSKeyValueObservingOptionNew task:^(id obj, NSDictionary *change) {
+            NSString *value = change[@"new"];
+            if ([value isEqualToString:@"1"]) {
+                _orderLb.textColor=[UIColor redColor];
+            }else if ([value isEqualToString:@"2"]){
+                _orderLb.textColor=[UIColor blueColor];
+            }else if([value isEqualToString:@"3"]){
+                _orderLb.textColor=[UIColor greenColor];
+            }else{
+                _orderLb.textColor=[UIColor blackColor];
+            }
+        }];
         [self.orderLb mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.mas_equalTo(0);
-            make.left.mas_equalTo(10);
-            make.width.mas_equalTo(20);
+            make.left.mas_equalTo(0);
+            make.width.mas_equalTo(35);
         }];
     }
     return _orderLb;
@@ -72,10 +87,13 @@
         _numberLb.font =[UIFont systemFontOfSize:12];
         _numberLb.textColor = [UIColor lightGrayColor];
         [self.contentView addSubview:_numberLb];
-        [self.numberIV mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(self.iconIV.mas_right).mas_equalTo(10);
-            make.size.mas_equalTo(CGSizeMake(10, 10));
+        [self.numberLb mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(self.numberIV.mas_right).mas_equalTo(2);
+            make.right.mas_equalTo(-10);
+            make.bottomMargin.mas_equalTo(self.iconIV.mas_bottomMargin).mas_equalTo(-3);
+            make.centerY.mas_equalTo(self.numberIV);
         }];
+
     }
     return _numberLb;
 }
@@ -85,11 +103,9 @@
         _numberIV = [[TRImageView alloc] init];
         _numberIV.imageView.image=[UIImage imageNamed:@"album_tracks"];
         [self.contentView addSubview:_numberIV];
-        [self.numberLb mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(self.numberIV.mas_right).mas_equalTo(2);
-            make.right.mas_equalTo(-10);
-            make.bottomMargin.mas_equalTo(self.iconIV.mas_bottomMargin).mas_equalTo(-3);
-            make.centerY.mas_equalTo(self.numberIV);
+        [self.numberIV mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(self.iconIV.mas_right).mas_equalTo(10);
+            make.size.mas_equalTo(CGSizeMake(10, 10));
         }];
     }
     return _numberIV;
@@ -100,7 +116,7 @@
         self.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
 //添加依赖autolayout 一定要有顺序，即从左到右，从上向下。
 //分割线左间距调整
-        self.separatorInset = UIEdgeInsetsMake(0, 50, 0, 0);
+        self.separatorInset = UIEdgeInsetsMake(0, 105, 0, 0);
         
     }
     return self;
