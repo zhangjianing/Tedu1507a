@@ -9,6 +9,7 @@
 #import "AppDelegate+Category.h"
 #import <AFNetworkActivityIndicatorManager.h>
 #import "MobClick.h"
+#import <MLTransition.h>
 
 @implementation AppDelegate (Category)
 
@@ -39,6 +40,8 @@
     [MobClick startWithAppkey:@"5632e65ae0f55a556a0013d9"];
 //友盟统计默认情况下会关闭掉xcode默认的crash提示
     [MobClick setLogEnabled:YES];
+//解决因为使用leftItem导致iOS7自带的右划返回前一页失效问题（保密）
+    [MLTransition validatePanPackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypeScreenEdgePan];
 }
 
 
